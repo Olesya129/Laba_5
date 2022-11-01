@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+public class задание7 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите переменную х в диапозоне [-4;4]");
+        double x = in.nextDouble(), g;
+        if (x >= -4 & x <= 4) {
+            if (x <= 0)
+                g = cos(sin(cos(pow(x,2) + 2 * x))) + PI * exp(1);
+            else
+                g = exp(sqrt(1 + ((2 * x) / (1 + pow(x,2)))));
+            System.out.println("g = " + g);
+        }else
+            System.out.println("Вы ввели данные не из диапозона [-4;4]");
+    }
+}
+
