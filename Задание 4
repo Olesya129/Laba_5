@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+public class задание4 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите переменную х");
+        double x = in.nextDouble(), y;
+        if (x < -2)
+            y = pow(x,x*x) - pow(x,x*x*x);
+        else if (x > -2 & x < 2)
+                y = cos(x) - 5 * x;
+            else if (x > 2)
+                    y = (4 * cos(2) - x) / (abs(1 - pow(x,2)));
+                else
+                    y = sqrt(5);
+        System.out.printf("y = %.6f", y);
+    }
+}
