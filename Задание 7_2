@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+public class задание7_2 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите переменную х в диапозоне [-4;4]");
+        double x = in.nextDouble(), z;
+        if (x >= -4 & x <= 4) {
+            if (x < 0)
+                z = tan(x) + cos(sqrt(1 + pow(x, 2)));
+            else if (x >= 0 & x <= 1)
+                z = 2 * pow(x, 6) + pow(x, 4) - (2 * cos(x) * pow(exp(1), -2 * x));
+            else
+                z = 2 * sin(cos(x)) - ((pow(x, 3) + x) / (2 * cos(x + 1) + 2));
+            System.out.println("z = " + z);
+        } else
+            System.out.println("Вы ввели данные не из диапозона [-4;4]");
+    }
+}
+
+
