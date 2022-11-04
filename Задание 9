@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class задание9 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите ваше ФИО");
+        String name = scan.nextLine();
+        System.out.println("Если вам нравится учится в школе введите true, иначе false");
+        boolean otvet = scan.nextBoolean();
+        if (otvet) {
+            System.out.println("Введите номер вашего любимого предмета");
+            System.out.println("1-физика");
+            System.out.println("2-информатика");
+            System.out.println("3-биология");
+            System.out.println("4-общество");
+            System.out.println("5-литература");
+            int p = scan.nextInt();
+            switch (p) {
+                case 1:
+                    System.out.println(name + ", Возможно из Вас получится отличный инженер!");
+                    break;
+                case 2:
+                    System.out.println(name + ", Возможно в будущем Вы станете хорошим программистом!");
+                    break;
+                case 3:
+                    System.out.println(name + ", Возможно в будущем Вы станете отличным врачом!");
+                    break;
+                case 4:
+                    System.out.println(name + ", Вам стоит попробовать себя в роли юриста!");
+                    break;
+                case 5:
+                    System.out.println(name + " , Возможно в будущем вы станете отличным филологом!");
+                    break;
+            }
+        }
+        else
+            System.out.println("Возможно Вы творческая личность, желаем Вам скорее найти себя. Успехов!");
+
+    }
+}
