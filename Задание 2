@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class задание2 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите 3 трехзначных числа");
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        double z = in.nextDouble();
+        System.out.println("Введите m");
+        double m = in.nextDouble();
+
+        if (x % 2 != 0) {
+            if (x / 100 + (x / 10 % 10) + (x % 10) > m) {
+                System.out.println(" " + x); }
+        }
+
+        if (y % 2 != 0) {
+            if (y / 100 + (y / 10 % 10) + (y % 10) > m) {
+                System.out.println(" " + y); }
+        }
+        if (z % 2 != 0) {
+            if (z / 100 + (z / 10 % 10) + (z % 10) > m) {
+                System.out.println(" " + z); }
+        }
+    }
+}
